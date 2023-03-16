@@ -1,0 +1,52 @@
+* {
+  font-family: Raleway;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-image: url("./Assets/360_F_234987334_ypearj3fpbE88454OLNJD53tXjnIhI6V.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  height: calc(60vh - 8em);
+  padding: 10em;
+}
+
+.text-animation {
+  border-right: 2px solid rgb(218, 218, 218);
+  transition: all 0.3s ease;
+  font-size: 40px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(40) 1s 1 both,
+    blinkTextCursor 600ms steps(40) infinite alternate;
+  letter-spacing: 3px;
+}
+
+.text-animation:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px#fff, 0 0 10px #0073e6, 0 0 10px #0073e6,
+    0 0 15px #0073e6, 0 0 20px #0073e6;
+  padding: 4px;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #0073e6;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
